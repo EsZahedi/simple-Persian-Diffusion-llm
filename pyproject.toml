@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persian-diffusion-llm"
+version = "0.1.0"
+description = "A from-scratch Persian masked diffusion language model built with PyTorch."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Esmaeil Zahedi" }]
+license = { text = "MIT" }
+dependencies = [
+  "torch>=2.1.0",
+  "accelerate>=0.25.0",
+  "transformers>=4.36.0",
+  "datasets>=2.16.0",
+  "tokenizers>=0.15.0",
+  "tqdm>=4.66.0",
+  "numpy>=1.24.0",
+  "Pillow>=10.0.0",
+  "imageio>=2.31.0",
+  "arabic-reshaper>=3.0.0",
+  "python-bidi>=0.4.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/persian-diffusion-llm"
+Repository = "https://github.com/your-username/persian-diffusion-llm"
+
+[project.scripts]
+persian-diffusion-train = "persian_diffusion_llm.train:main"
+persian-diffusion-generate = "persian_diffusion_llm.generate:main"
+persian-diffusion-gif = "persian_diffusion_llm.make_gif:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

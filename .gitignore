@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model/data artifacts
+checkpoints/**
+!checkpoints/.gitkeep
+tokenizer_from_scratch/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Generated media
+assets/*.gif
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
