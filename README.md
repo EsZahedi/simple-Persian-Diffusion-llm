@@ -2,7 +2,7 @@
 
 A clean, resume-ready PyTorch project that trains a **Persian masked diffusion language model** from scratch on the `TinyStories-Farsi` dataset. The project includes tokenizer training, data streaming, model training, diffusion-style generation, and optional GIF visualization of the progressive unmasking process.
 <p align="center">
-  <img src="assets/demo.gif" alt="Persian Diffusion LLM animated generation demo" width="760">
+  <img src="demo.gif" alt="Persian Diffusion LLM animated generation demo" width="760">
 </p>
 
 ## Highlights
