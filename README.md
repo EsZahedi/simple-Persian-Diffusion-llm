@@ -1,4 +1,4 @@
-# Simple Persian Diffusion LLM
+# Simple Persian Diffusion LM
 
 A clean, resume-ready PyTorch project that trains a **Persian diffusion language model** from scratch on the `TinyStories-Farsi` dataset. The project includes tokenizer training, data streaming, model training, diffusion-style generation, and optional GIF visualization of the progressive unmasking process.
 <p align="center">
